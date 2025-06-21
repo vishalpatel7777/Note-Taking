@@ -1,5 +1,4 @@
-import express from "express"; // it give me warning
-// const express = require('express');
+import express from "express"; 
 import dotenv from "dotenv";
 import cors from "cors";
 import path from "path";
@@ -21,7 +20,7 @@ if (process.env.NODE_ENV !== "production") {
   );
 }
 
-// this is middleware basicallt parse the json bodies : req.body
+// this is middleware basically parse the json bodies : req.body
 app.use(express.json());
 
 // simple custom middleware
